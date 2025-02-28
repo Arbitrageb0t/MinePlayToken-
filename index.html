@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinePlayToken</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
@@ -24,13 +28,15 @@
             position: relative;
             padding: 20px 0;
             text-align: center;
+            min-height: 100px;
         }
 
         .logo {
             position: absolute;
             left: 20px;
             top: 20px;
-            width: 100px;
+            width: 80px;
+            height: auto;
         }
 
         .title {
@@ -38,7 +44,7 @@
             font-family: 'Comic Sans MS', cursive;
             color: #ff6b00;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            margin: 0;
+            display: inline-block;
         }
 
         .mining-symbol {
@@ -47,7 +53,7 @@
         }
 
         .coming-soon {
-            font-size: 24px;
+            font-size: 20px;
             color: #666;
             margin: 10px 0;
         }
@@ -77,6 +83,70 @@
         .tokenomics-item {
             margin: 10px 0;
         }
+
+        /* Media Queries for Mobile Compatibility */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 60px 0 20px;
+            }
+
+            .logo {
+                width: 60px;
+                left: 10px;
+                top: 10px;
+            }
+
+            .title {
+                font-size: 32px;
+            }
+
+            .mining-symbol {
+                font-size: 24px;
+            }
+
+            .coming-soon {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 15px;
+                margin: 10px 0;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+
+            .roadmap-phase h3 {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .title {
+                font-size: 24px;
+            }
+
+            .mining-symbol {
+                font-size: 18px;
+            }
+
+            .coming-soon {
+                font-size: 14px;
+            }
+
+            .section {
+                padding: 10px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,7 +154,7 @@
         <div class="header">
             <!-- Replace with your actual logo image path -->
             <img src="path_to_your_logo.png" alt="MinePlayToken Logo" class="logo">
-            <h1 class="title">MinePlayToken ⛏️</h1>
+            <h1 class="title">MinePlayToken <span class="mining-symbol">⛏️</span></h1>
             <p class="coming-soon">MinePlay App coming soon on Android and iPhone</p>
         </div>
 
