@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinePlayToken</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -84,6 +86,39 @@
             margin: 10px 0;
         }
 
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-link:hover {
+            color: #ff6b00;
+        }
+
+        .social-link i {
+            font-size: 24px;
+        }
+
         /* Media Queries for Mobile Compatibility */
         @media screen and (max-width: 768px) {
             .container {
@@ -124,6 +159,18 @@
             .roadmap-phase h3 {
                 font-size: 18px;
             }
+
+            .social-links {
+                gap: 20px;
+            }
+
+            .social-link {
+                font-size: 16px;
+            }
+
+            .social-link i {
+                font-size: 20px;
+            }
         }
 
         @media screen and (max-width: 480px) {
@@ -145,6 +192,15 @@
 
             .section h2 {
                 font-size: 20px;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .social-link i {
+                font-size: 18px;
             }
         }
     </style>
@@ -212,6 +268,18 @@
                 <p>• Marketing & Community: 15% (750,000,000 $MPT) - Promotions, airdrops, and community incentives.</p>
                 <p>• Liquidity & Exchange Listings: 10% (500,000,000 $MPT) - Ensuring smooth transactions and market stability.</p>
                 <p>• Team & Advisors: 10% (500,000,000 $MPT) - Locked with a vesting period to ensure long-term commitment.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Join our community:</p>
+            <div class="social-links">
+                <a href="https://x.com/MinePlayToken" target="_blank" class="social-link">
+                    <i class="fab fa-x-twitter"></i> @MinePlayToken
+                </a>
+                <a href="https://t.me/MinePlayToken" target="_blank" class="social-link">
+                    <i class="fab fa-telegram-plane"></i> @MinePlayToken
+                </a>
             </div>
         </div>
     </div>
